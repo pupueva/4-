@@ -4,7 +4,7 @@
 #define _CRT_SECURE_NO_DEPRECATE 
 int main()
 {
-    setlocale(LC_ALL, "RUS");
+    setlocale(LC_CTYPE, "RUS");
 
 	char c = '!';
 
@@ -27,12 +27,15 @@ int main()
     printf("ввести cz:");
     scanf_s("%c",&cz);
     printf("%c\n", cz);
+
     printf("ввести iz:");
     scanf_s("%d", &iz);
     printf("%d\n", iz);
+
     printf("ввести fz:");
     scanf_s("%f", &fz);
     printf("%f\n", fz);
+
     printf("ввести dz:");
     scanf_s("%lf", &dz);
     printf("%lf\n", dz);
@@ -63,7 +66,7 @@ int main()
     int pickme;
 
     printf("введите целое 3х значное число :");
-    scanf("%d", &pickme);
+    scanf_S("%d", &pickme);
 
     printf("\nпоследняя цифра числа: %d\nпервая цифра числа: %d\nсумма цифр данного числа: %d\nчисло наоборот:%d%d%d\n", pickme % 10, pickme / 100, (pickme / 100) + (pickme / 10) % 10 + (pickme % 10), pickme % 10, (pickme / 10) % 10, pickme / 100);
 
